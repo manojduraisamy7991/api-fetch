@@ -30,7 +30,7 @@ export default function App() {
           </thead>
           {data.map((_val) => {
             return (
-              <tbody>
+              <tbody key={_val.id}>
                 <td>{_val.title}</td>
                 <td>{_val.price}</td>
                 <td>{_val.category}</td>
